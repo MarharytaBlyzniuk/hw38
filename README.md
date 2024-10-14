@@ -1,3 +1,22 @@
+# Мій React Проєкт
+
+## Запуск проєкту my-project
+
+1. Клонуйте репозиторій: https://github.com/MarharytaBlyzniuk/hw38.git
+2. Перейдіть до папки з проєктом: cd my-project
+3. Встановіть залежності:npm install
+4. Запустіть проєкт: npm start
+5.
+## Опис компонентів
+
+- **Button**: Кнопка, яка приймає `text` та `onClick` як props.
+- **Input**: Поле введення з `placeholder` та `onChange` як props.
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
