@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { useState } from 'react';
+import Button from './components/Button'; // імпортуємо кнопку
+import Input from './components/Input';  // імпортуємо текстове поле
 
 function App() {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleButtonClick = () => {
+    alert('Кнопка натиснута!');
+  };
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+        <h1>My Project</h1>
+        <Input placeholder="Введіть текст" onChange={handleInputChange} />
+        <Button text="Натисни мене" onClick={handleButtonClick} />
+        <p>Введений текст: {inputValue}</p>
+      </div>
   );
 }
 
